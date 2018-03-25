@@ -150,3 +150,5 @@ int main(int argc, const char * argv[]){
 
 
 
+函数的定义更贴近与Android中的方法的声明，参数的传递方式也很想。
+
