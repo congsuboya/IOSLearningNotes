@@ -33,5 +33,67 @@
 @end
 ```
 
+OC中属性的声明其实就是Android中类的公共属性的定义，Android代码如下：
+
+```java
+public class Person{
+    public int age;
+    public String name;
+}
+```
+
+## OC中的setter与getter方法
+
+既然普通的属性定义是公共属性，那为了安全的私有属性定义OC也有，被称为内部属性。而这个内部属性的调用也是通过声明的setter和getter方法。这里与Android类中私有方法的定义和暴露如出一辙。
+
+.h文件中的声明
+
+```cpp
+#import <Foundation/Foundation.h>
+
+@interface Person :NSObject{ //内部属性的定义
+    int age;
+    NSString *name;
+}
+-(void)setAge:(int)newAge;//age属性对应的setter方法  定义格式为set + 变量名称(首字母大写)
+-(int)age;//age属性对应的getter方法  定义格式为返回值类型 + 变量名称
+
+@end
+```
+
+.m文件中的实现
+
+```cpp
+#import "Person.h"
+
+@implementation Person
+-(void)setAge:(int)newAge{//set方法的实现
+    ...//这里可以加一些逻辑判断
+    age = newAge;
+}
+-(int)age{//get方法的实现
+    ...//这里可以加一些逻辑判断
+    return age;
+}
+@end
+```
+
+主函数中的调用
+
+```
+#import <Foundation/Foundation.h>
+#import "Person.h"
+
+int main(int argc, const char * argv[]){
+
+    @autoreleasepool{
+        Person *per = [[Person alloc]init];
+        per.age = 18;
+        NSLog(@"age=%d",per.age);
+    }
+    return 0;
+}
+```
+
 
 
