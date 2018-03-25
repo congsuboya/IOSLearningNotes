@@ -79,20 +79,30 @@ public class Person{
     }
 }
 
+.........
 
 import android.app.study.Person;//导入定义的类
+.....
+
 public class MainActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_demo);
-        
+
         Person per = new Person();
         per.study("Object-c",18);//类似OC中的对象方法的调用
-        
+
         Person.clearClassRoom();//类似OC中的类方法
     }
 }
+```
+
+输出：
+
+```
+study,我正在学习Object-c,我已经学习了18个小时
+study,我是一个学生，我应该打扫教室
 ```
 
 ## 函数的声明、实现以及调用
