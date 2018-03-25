@@ -16,8 +16,6 @@
 
 6、在大规模的应用中，通常把相应的功能写成一个分类，可以有无限个分类，对原有类进行扩充，一般分模块写，一个模块一个分类
 
-
-
 如给NSString类增加一个类方法，计算字符串中阿拉伯数字的个数；代码如下：
 
 .h文件中的声明
@@ -40,6 +38,18 @@
     +(int)NumberOfString:(NSString *)str{
         int count = 0;
         for(int i =0;i<str.length;i++){
+            //取出字符串中的第i个位置的字符给c;
+            unichar c=[str characterAtindex:i];
+            //字符使用单引号，如果再数字范围内，则count自加
+            if(c>='0'&&c<='9')
+                count++;
+        }
+        return count;
+    }
+    
+-(int)NumberCount{
+    int count = 0;
+    for(int i =0;i<str.length;i++){
             //取出字符串中的第i个位置的字符给c;
             unichar c=[str characterAtindex:i];
             //字符使用单引号，如果再数字范围内，则count自加
