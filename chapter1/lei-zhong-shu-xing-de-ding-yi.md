@@ -8,7 +8,7 @@
 
 属性修饰词为
 
-1、nonatomic atomic:修饰为原子性。
+1、nonatomic 非原子性访问，不加同步，多线程并非访问会提高性能。与之对应的atomic是原子性，线程安全，但是性能较差。
 
 2、assign表示的是直接复制非指针变量，不会产生内存管理的代码，当属性是一个基本数据类型时使用，如 int float bool等基本类型。
 
@@ -19,6 +19,21 @@
 5、weak 对象的弱引用，不会增加对象的引用计数，也不会持有对象，当对象消失后指针自动指向nil,所以这里也就防止了野指针的存在。
 
 6、strong 对象的强引用，会增加对象的引用计数，如果指向了一个空对象，会造成野指针，平常用的最多的也是strong。
+
+
+
+代码示例如下：
+
+```cpp
+#import <Foundation/Foundation.h>
+
+@interface Person :NSObject
+    //属性的声明
+    @property(nonatomic,assign) int age;
+    @property(nonatomic,copy)NSString *name;
+    】
+@end
+```
 
 
 
