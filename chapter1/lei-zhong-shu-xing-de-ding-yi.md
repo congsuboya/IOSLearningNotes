@@ -88,8 +88,8 @@ int main(int argc, const char * argv[]){
 
     @autoreleasepool{
         Person *per = [[Person alloc]init];
-        per.age = 18;
-        NSLog(@"age=%d",per.age);
+        per.age = 18;//调用set方法
+        NSLog(@"age=%d",per.age);//调用get方法
     }
     return 0;
 }
