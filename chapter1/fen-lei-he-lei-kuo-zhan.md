@@ -95,10 +95,15 @@ int main(int argc,const char * argv[]){
 ```cpp
 #import "Person.h"
 
+//对Person类的类扩展区域
 @interface Person(){
-
+    //定义的属性和方法，默认私有，外部不可以访问
     BOOL male;
 }
+@end
+//第二种定义方式
+@inteface Person
+@property(nonatomic,copy) NSString *loveName;
 @end
 
 @implementation Person
@@ -109,6 +114,9 @@ int main(int argc,const char * argv[]){
     }
     return self;
 }
+-(NSString*)getLoveName{
+    return _lovePerson;//用第二种方式定义的属性，使用时必须在属性名前添加下划线_
+}
 -(void)study{
     if(male){
         NSLog(@"我是男生，我喜欢学习数学");
@@ -118,8 +126,6 @@ int main(int argc,const char * argv[]){
 }
 @end
 ```
-
-
 
 
 
