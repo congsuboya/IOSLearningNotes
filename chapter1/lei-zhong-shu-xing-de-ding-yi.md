@@ -20,8 +20,6 @@
 
 6、strong 对象的强引用，会增加对象的引用计数，如果指向了一个空对象，会造成野指针，平常用的最多的也是strong。
 
-
-
 代码示例如下：
 
 ```cpp
@@ -31,7 +29,7 @@
     //属性的声明
     @property(nonatomic,assign) int age;
     @property(nonatomic,copy)NSString *name;
-    】
+
 @end
 ```
 
