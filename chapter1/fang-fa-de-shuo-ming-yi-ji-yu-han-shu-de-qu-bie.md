@@ -1,6 +1,16 @@
-## 方法的声明、实现以及调用
+## OC中的方法
 
-oc中的方法分类方法和对象方法。两者创建标示不同，并且调用的时候也是有区别的。在.h文件中声明时必须再@interface与@end之间，在.m文件中进行实现时必须再@implementation与@end之间。同Android相比，OC中的类方法相当于Android的静态方法，用static修饰，对象方法则相当于普通类方法，没有static来进行修饰。
+oc中的方法分类方法和对象方法。两者创建标示不同，并且调用的时候也是有区别的。
+
+1、方法都是以 - \(对象方法\) 或者 + \(类方法\)开头。
+
+2、方法的声明必须写在.h文件中的@interface和@end之间。
+
+3、方法的实现必须写在.m文件中的@implementation和@end之间。
+
+4、对象方法只能由对象来调用，类方法只能由类来调用。
+
+5、对象方法归对象所有，类方法归类所有。
 
 类方法声明格式 ：+ \(返回值\)方法名称:\(参数类型\)参数名1 参数名2:\(参数类型\) 参数名2 ....；
 
@@ -63,6 +73,10 @@ int main(int argc, const char * argv[]){
 我是一个学生，我应该打扫教室
 ```
 
+#### 与Android的区别
+
+同Android相比，OC中的类方法相当于Android的静态公共方法，用public和 static修饰，对象方法则相当于普通类方法，没有static来进行修饰。
+
 Android代码示例
 
 ```java
@@ -105,7 +119,34 @@ study,我正在学习Object-c,我已经学习了18个小时
 study,我是一个学生，我应该打扫教室
 ```
 
-## 函数的声明、实现以及调用
+## OC中的函数
 
-在
+1、函数能写在文件中的任意位置\(@interface和@end之间\)，函数归文件所有
+
+2、函数调用不依赖于对象，所有函数不存在隶属关系
+
+3、函数内部不能直接通过成员变量名访问某个对象的成员变量
+
+代码示例如下：
+
+```cpp
+#import <Foundation/Foundation.h>
+
+void eating(){
+    NSLog(@"我是一个函数，我要吃饭");
+}
+
+int main(int argc, const char * argv[]){
+
+    @autoreleasepool{
+        Person *per = [[Person alloc]init];
+        [per study:@"Object-c" time:18]//对象方法的调用
+
+        [Person clearClassRoom];//类方法的调用
+    }
+    return 0;
+}
+```
+
+
 
