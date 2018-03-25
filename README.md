@@ -1,3 +1,4 @@
-# My Awesome Book
+# ios学习笔记
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+这个笔记是通过学习iOS视频的一些学习心得和体会。主要是对比这Android的语法来进行学习OC.
+
