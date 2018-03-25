@@ -41,8 +41,6 @@ import "Person.h"
 @end
 ```
 
-
-
 上述OC的两个文件表达的方法，再Android中一个文件就可以表达，这也是两端的不同。示例代码如下：
 
 Android代码示例：
@@ -52,16 +50,18 @@ public class Person{
     public void study(){
         Log.e("study","我正在学习");
     }
-    
+
     public void study(String subject){
         Log.e("study","我正在学习"+subject);
     }
-    
+
     public void study(String subject,int time){
         Log.e("study","我正在学习" + subject +  ",我已经学习了" + time + "小时");
     }
 }
 ```
+
+
 
 
 
