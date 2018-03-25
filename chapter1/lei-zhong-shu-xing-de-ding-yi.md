@@ -97,3 +97,37 @@ int main(int argc, const char * argv[]){
 
 
 
+Android代码示例
+
+```java
+public class Person{
+    private int age;
+    
+    private String name;
+    
+    public void setAge(int newAge){
+        this.age = newAge;
+    }
+    
+    public int getAge(){
+        return age;    
+    }
+}
+
+
+....
+
+public class MainActivity extends Activity{
+    @Ovrried
+    protected void onCreate(Bundle bun){
+        super.onCreate(bun);
+        setContentView(R.layout.main_demo);
+        Person  per = new Person();
+        per.setAge(18);
+        Log.e("study","age = " + per.getAge());
+    }
+}
+```
+
+
+
