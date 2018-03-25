@@ -20,15 +20,9 @@ import <Foundation/Foundation.h> //头文件
 @end
 ```
 
-Android 类文件示例
-
-```java
-public class Person{
-  ...声明成员变量，方法、属性等
-}
-```
-
 .m 主要用来实现.h 里声明的方法。举个例子，如果要写一个方法，你要在.h里先声明。并且.m文件创建是默认导入.h文件，通过这个方式与.h文件互相关联。并且.m文件的代码被**@implementation**和**@end**包裹。注意：oc中方法接受的参数的书写方式与Android的方法是有区别的，当oc方法没有参数时直接后面跟{}再里面实现方法，当有参数时也是:\(参数类型\) 参数名1 参数名2:\(参数类型\) 参数名2... ;
+
+OC .m文件示例
 
 ```cpp
 import "Person.h"
@@ -45,6 +39,28 @@ import "Person.h"
     NSLog(@"我正在学习%@,我已经学习了%i小时了",subject,time);
 }
 @end
+```
+
+
+
+上述OC的两个文件表达的方法，再Android中一个文件就可以表达，这也是两端的不同。示例代码如下：
+
+Android代码示例：
+
+```java
+public class Person{
+    public void study(){
+        Log.e("study","我正在学习");
+    }
+    
+    public void study(String subject){
+        Log.e("study","我正在学习"+subject);
+    }
+    
+    public void study(String subject,int time){
+        Log.e("study","我正在学习" + subject +  ",我已经学习了" + time + "小时");
+    }
+}
 ```
 
 
