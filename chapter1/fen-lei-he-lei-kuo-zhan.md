@@ -46,7 +46,7 @@
         }
         return count;
     }
-    
+
 -(int)NumberCount{
     int count = 0;
     for(int i =0;i<str.length;i++){
@@ -59,6 +59,25 @@
         return count;
     }
 @end
+```
+
+扩展方法的使用
+
+```cpp
+#import <Foundation/Foundation.h>
+#import "NSString+NumberOfs.h"
+
+int main(int argc,const char * argv[]){
+    int a = [NSString numberofString:@"1223123lkjiwwer9080"];
+    NSLog(@"%d",a);
+    
+    int b = [@"oijlskj1231kljoij213412" NumberCount];
+    NSLog(@"%d",b);
+}
+
+....输出
+11
+10
 ```
 
 
