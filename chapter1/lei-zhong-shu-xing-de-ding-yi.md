@@ -31,6 +31,8 @@
     @property(nonatomic,copy)NSString *name;
 
 @end
+
+//如上定义的属性，调用时直接 对象名.属性名  即可调用
 ```
 
 OC中属性的声明其实就是Android中类的公共属性的定义，Android代码如下：
@@ -95,20 +97,18 @@ int main(int argc, const char * argv[]){
 }
 ```
 
-
-
 Android代码示例
 
 ```java
 public class Person{
     private int age;
-    
+
     private String name;
-    
+
     public void setAge(int newAge){
         this.age = newAge;
     }
-    
+
     public int getAge(){
         return age;    
     }
