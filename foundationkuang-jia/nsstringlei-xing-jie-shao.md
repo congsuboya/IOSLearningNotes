@@ -115,13 +115,21 @@ OC代码
   NSRange rang;//结构体 字符串的长度 和位置 
   rang = [str1 rangeOfString:str2];
   NSLog(@"%lu %lu",(unsigned long)rang.length,(unsigned long)rang.location);
-  
+
   NSString *str1 = @"abcdefg";
   NSRange rang;
   rang.length = 2;
   rang.location = 3;
   NSString *str2 = [str1 substringWithRange:rang];
   NSLog(@"%@",str2);//de
+```
+
+Android代码
+
+```
+String str1 = "abcdefg";
+String str2 = "cde";
+int num = str1.indexOf(str2);//返回为3
 ```
 
 
