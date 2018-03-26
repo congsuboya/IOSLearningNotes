@@ -48,7 +48,11 @@ NSString *str1 = [NSString stringWithFormat:@"%d",123];//str1的值为“123”�
 str1.intValue;//int类型123
 str1.floatValue;//float类型123.00000
 str1.doubleValue;//double类型123.00000
-NSString *str2 = [NSString stringWithFormat:@"%f",123.21];//str1的值为“123.21”；
+//字符串不能转为其他基本类型
+NSString *str2 = @"sdfwer";
+str2.intValue;//int类型0
+str2.floatValue;//float类型0.00000
+str2.doubleValue;//double类型0.00000
 ```
 
 Android 代码:
