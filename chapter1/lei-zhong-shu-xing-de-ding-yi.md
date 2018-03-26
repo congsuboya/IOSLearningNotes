@@ -129,7 +129,7 @@ public class MainActivity extends Activity{
 }
 ```
 
-**注意：**私有属性的定义方法如果不写get和set方法，可以通过 -&gt;的方式来调用，但是这样就破坏了ios的封装特性，不建议这样使用。并且私有属性的修饰词也有 @public  @private  @protected  @package这四种，但是我尝试了后居然没有区别，一样可以通过 -&gt;的方式取值和修改值
+**注意：**私有属性的定义方法如果不写get和set方法，可以通过 -&gt;的方式来调用，但是这样就破坏了ios的封装特性，不建议这样使用。并且私有属性的修饰词也有 @public  @private  @protected  @package这四种，**这四种修饰符和Android中的修饰符一致，意义也是一样的**。
 
 ```cpp
 #import <Foundation/Foundation.h>
@@ -145,14 +145,10 @@ public class MainActivity extends Activity{
 
 Person *per = [[Person alloc]init];
 per->age = 18;
-per -> name = @"chaoye";
+per->name = @"chaoye"; //这里会报错，因为是private修饰，外部不能调用和修改
 
 NSLog(@"名字是%@",per->name);
 ```
-
-
-
-
 
 
 
