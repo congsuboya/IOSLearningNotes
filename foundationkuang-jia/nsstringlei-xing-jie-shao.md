@@ -56,12 +56,12 @@ str2.floatValue;//float类型0.00000
 str2.doubleValue;//double类型0.00000
 ```
 
-Android 代码:
+Android 代码:Android 中利用基本数据类型的包装类自带的valueOf方法，可以方便的互相转换
 
 ```java
-String str1 = 123 + "";//
-String str2 = String.valueOf(123);
-String str3 = String.valueOf(12.21);
+String str1 = "123";
+int num = Integer.valueOf(123);
+float f = Float.valueOf(12.21);
 ```
 
 
