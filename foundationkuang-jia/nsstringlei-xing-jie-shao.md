@@ -129,7 +129,7 @@ Android代码
 ```
 String str1 = "abcdefg";
 String str2 = "cde";
-int num = str1.indexOf(str2);//返回为3
+int num = str1.indexOf(str2);//返回为3不存在时返回-1
 ```
 
 
