@@ -56,7 +56,7 @@ str2.floatValue;//float类型0.00000
 str2.doubleValue;//double类型0.00000
 ```
 
-Android 代码:Android 中利用基本数据类型的包装类自带的valueOf方法，可以方便的互相转换
+Android 代码:Android 中利用基本数据类型的包装类自带的valueOf方法，可以方便的互相转换。但是当要转换的类型并不能转为制定数据类型时强制转换，则Android会抛出异常xxxFormatException
 
 ```java
 String str1 = "123";
