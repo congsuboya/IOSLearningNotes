@@ -22,14 +22,21 @@ String str = "123abc";
 
 #### 2、类型之间的转换
 
-虽然字符串类型是对象，但是再OC和Android中可以与其他基本类型互相转化。
+虽然字符串类型是对象，但是再OC和Android中可以与其他基本类型互相转化。OC中其他类型转为字符串主要是使用NSString类的stringWithFormat方法，格式为\[NSString stringWithFormat:@"xx", yy\]；其中xx为要转为字符串的其他类型的缩写如int为%i float类型为 %f等,yy为实际值。
 
 oc代码:
 
-```
+```cpp
 NSString *str1 = [NSString stringWithFormat:@"%d",123];//str1的值为“123”；
 NSString *str2 = [NSString stringWithFormat:@"%f",123.21];//str1的值为“123.21”；
+```
 
+Android 代码:
+
+```java
+String str1 = 123 + "";
+String str2 = String.valueOf(123);
+String str3 = String.valueOf(12.21);
 ```
 
 
