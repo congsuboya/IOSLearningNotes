@@ -64,21 +64,27 @@ int num = Integer.valueOf(123);
 float f = Float.valueOf(12.21);
 ```
 
-#### 3、字符串的比较
+#### 3、字符串的比较与大小写转换
 
 OC中比较也可以用==，这里的定义与Android中一样，是比较引用内存地址变量是否相等，相等时才会返回true。
 
 像Android 中一样OC中也有只比较内容的方法，为NSString的对象方法 isEqualToString，但是只有这一个方法，并没有提供像Android中忽视大小写的比较方法。
 
+大小写的转换和Android也很想都是提供对象方法，只是OC比Android多一个方法把首字母大写其他都小写。
+
 OC代码：
 
 ```
-NSString *str1 = [NSString stringWithFormat:@"%@",@"abc"];
-NSString *str2 = @"abc";
+NSString *str1 = [NSString stringWithFormat:@"%@",@"Abc"];
+NSString *str2 = @"Abc";
 NSString *str3 = @"123";
 str1 == str2 //false;比较内存引用地址
 [str1 isEqualToString:str2]//true  比较内容
 [str1 isEqualToString:str3]//false  比较内容
+
+[str1 lowercaseString]//转为小写 abc
+[str1 uppercaseString]//转为大写 ABC
+[str1 capitalizedString]//首字母大写其他小写 Abc
 ```
 
 Android代码:
