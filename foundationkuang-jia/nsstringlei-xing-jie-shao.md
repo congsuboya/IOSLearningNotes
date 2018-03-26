@@ -74,7 +74,7 @@ OC中比较也可以用==，这里的定义与Android中一样，是比较引用
 
 OC代码：
 
-```
+```cpp
 NSString *str1 = [NSString stringWithFormat:@"%@",@"Abc"];
 NSString *str2 = @"Abc";
 NSString *str3 = @"123";
@@ -89,7 +89,7 @@ str1 == str2 //false;比较内存引用地址
 
 Android代码:
 
-```
+```java
  String str1 = "Hello World";
  String str2 = "hello world";
  Object objStr = str;
@@ -97,6 +97,8 @@ Android代码:
  System.out.println( str1.compareTo(str2) );//返回false
  System.out.println( str.compareToIgnoreCase(str2) );  //忽略大小写 true
  System.out.println( str.compareTo(objStr.toString()));//true
+ str1.toLowerCase();//hello world
+ str1.toUpperCase();//HELLO WORLD
 ```
 
 
