@@ -64,5 +64,32 @@ int num = Integer.valueOf(123);
 float f = Float.valueOf(12.21);
 ```
 
+#### 3、字符串的比较
+
+OC中比较也可以用==，这里的定义与Android中一样，是比较引用内存地址变量是否相等，相等时才会返回true。
+
+像Android 中一样OC中也有只比较内容的方法，为NSString的对象方法 isEqualToString，但是只有这一个方法，并没有提供像Android中忽视大小写的比较方法。
+
+OC代码：
+
+```
+NSString *str1 = [NSString stringWithFormat:@"%@",@"abc"];
+NSString *str2 = @"abc";
+NSString *str3 = @"123";
+
+```
+
+Android代码:
+
+```
+ String str1 = "Hello World";
+ String str2 = "hello world";
+ Object objStr = str;
+ 
+ System.out.println( str1.compareTo(str2) );//返回false
+ System.out.println( str.compareToIgnoreCase(str2) );  //忽略大小写 true
+ System.out.println( str.compareTo(objStr.toString()));//true
+```
+
 
 
