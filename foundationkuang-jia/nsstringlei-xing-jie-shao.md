@@ -34,7 +34,7 @@ NSString *str2 = [NSString stringWithFormat:@"%f",123.21];//str1的值为“123.
 Android 代码:
 
 ```java
-String str1 = 123 + "";
+String str1 = 123 + "";//
 String str2 = String.valueOf(123);
 String str3 = String.valueOf(12.21);
 ```
