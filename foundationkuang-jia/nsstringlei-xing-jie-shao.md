@@ -101,5 +101,28 @@ Android代码:
  str1.toUpperCase();//HELLO WORLD
 ```
 
+#### 4、字符串中的索引
+
+索引分为内容索引和位置索引，这点OC引入了结构体类型NSRange。其中提供两个方法 rangeOfString 和substringWithRange。
+
+其实rangeOfString特别像Android中的indexOf方法，调用此方法返回字符串1在字符串2中的位置，rangeOfString方法返回一个结构体NSRange，里面有两个属性一个length代表要比较的字符串的长度，一个location代码字符串的位置。理解了结构体的概念以及内部的两个属性，substringWithRange就比较好理解了，就是传入一个结构体，按这个结构体的属性来切割字符串。
+
+OC代码
+
+```cpp
+  NSString *str1 = @"abcdefg";
+  NSString *str2 = @"cde";
+  NSRange rang;//结构体 字符串的长度 和位置 
+  rang = [str1 rangeOfString:str2];
+  NSLog(@"%lu %lu",(unsigned long)rang.length,(unsigned long)rang.location);
+  
+  NSString *str1 = @"abcdefg";
+  NSRange rang;
+  rang.length = 2;
+  rang.location = 3;
+  NSString *str2 = [str1 substringWithRange:rang];
+  NSLog(@"%@",str2);//de
+```
+
 
 
