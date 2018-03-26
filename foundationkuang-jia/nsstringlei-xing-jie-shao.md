@@ -76,7 +76,9 @@ OC代码：
 NSString *str1 = [NSString stringWithFormat:@"%@",@"abc"];
 NSString *str2 = @"abc";
 NSString *str3 = @"123";
-
+str1 == str2 //false;比较内存引用地址
+[str1 isEqualToString:str2]//true  比较内容
+[str1 isEqualToString:str3]//false  比较内容
 ```
 
 Android代码:
@@ -85,7 +87,7 @@ Android代码:
  String str1 = "Hello World";
  String str2 = "hello world";
  Object objStr = str;
- 
+
  System.out.println( str1.compareTo(str2) );//返回false
  System.out.println( str.compareToIgnoreCase(str2) );  //忽略大小写 true
  System.out.println( str.compareTo(objStr.toString()));//true
