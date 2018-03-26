@@ -6,12 +6,19 @@
 
 创建与初始化与Android 区别不大，都是可以先声明对象或者是直接赋值。
 
+oc代码：
+
 ```
-NSString *str1 = [[NSString alloc]init]//声明string串
-NSString *str2 = @"123";
+NSString *str1 = [[NSString alloc]init]//声明string串,这个时候虽然声明了一个String串类型但是值是nil;
+NSString *str2 = @"123abc";//直接赋值的方式
 ```
 
+Android 代码
 
+```
+String str = new String();
+String str = "123abc";
+```
 
 
 
