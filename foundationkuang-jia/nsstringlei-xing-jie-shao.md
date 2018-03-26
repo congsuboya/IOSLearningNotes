@@ -126,10 +126,11 @@ OC代码
 
 Android代码
 
-```
+```java
 String str1 = "abcdefg";
 String str2 = "cde";
 int num = str1.indexOf(str2);//返回为3不存在时返回-1
+String str3 = str1.substring(2,5);//第一个参数是开始位置，第二个位置为结束位置，返回cde;
 ```
 
 
