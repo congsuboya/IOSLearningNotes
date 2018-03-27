@@ -7,6 +7,7 @@
   * [类中属性的定义](chapter1/lei-zhong-shu-xing-de-ding-yi.md)
   * [类别和类扩展](chapter1/fen-lei-he-lei-kuo-zhan.md)
   * [继承与多态](chapter1/ji-cheng-yu-duo-tai.md)
+  * [基本类型与对象](chapter1/ji-ben-lei-xing-yu-dui-xiang.md)
 * [Foundation框架](foundationkuang-jia.md)
   * [NSString类型介绍](foundationkuang-jia/nsstringlei-xing-jie-shao.md)
 
