@@ -9,4 +9,7 @@
   * [继承与多态](chapter1/ji-cheng-yu-duo-tai.md)
 * [Foundation框架](foundationkuang-jia.md)
   * [NSString类型介绍](foundationkuang-jia/nsstringlei-xing-jie-shao.md)
+  * iOS中堆与栈的区别
+* [iOS的内存管理](iosde-nei-cun-guan-li.md)
+  * [iOS中堆与栈的区别](iosde-nei-cun-guan-li/ioszhong-dui-yu-zhan-de-qu-bie.md)
 
