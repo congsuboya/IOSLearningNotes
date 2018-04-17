@@ -10,9 +10,10 @@
   * [基本类型与对象](chapter1/ji-ben-lei-xing-yu-dui-xiang.md)
 * [Foundation框架](foundationkuang-jia.md)
   * [NSString类型介绍](foundationkuang-jia/nsstringlei-xing-jie-shao.md)
-    * iOS中堆与栈的区别
 * [iOS的内存管理](iosde-nei-cun-guan-li.md)
   * [iOS中堆与栈的区别](iosde-nei-cun-guan-li/ioszhong-dui-yu-zhan-de-qu-bie.md)
-* UI基础控件
+* UI控件
+  * UIView基本View控件
   * [UILabel文本控件](uilabelwen-ben-kong-jian.md)
+  * [UIImageView图片控件](uiimageviewtu-pian-kong-jian.md)
 
