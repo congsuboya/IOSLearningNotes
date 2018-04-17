@@ -141,5 +141,24 @@ TextPaint textPaint = textView.getPaint();
 float textPaintWidth = textPaint.measureText(text);
 ```
 
+iOS如下：
+
+```cpp
+//创建一个UIFont对象
+UIFont *font = [UIFont systemFontOfSize:16.0];
+NSString *str =@"我是UILable练习";
+//获取文本宽高 其中labelWH中的width就是文本宽  height就是文本高
+CGSize labelWH = [str sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil]];
+
+//创建UILabel的时候设置得到的宽高
+UILabel *label5 = [[UILabel alloc]initWithFrame:CGRectMake(50, 500, labelWH.width, labelWH.height)];
+label5.text =str;
+label5.backgroundColor = [UIColor grayColor];
+label5.textColor = [UIColor greenColor];
+//设置UILabel的字体为上面创建的UIFont
+label5.font =font;
+[self.view addSubview:label5];
+```
+
 
 
