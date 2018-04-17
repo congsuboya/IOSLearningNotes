@@ -117,26 +117,26 @@ label3.alpha = 0.4;
 
 再实际开发中更多时候是需要我们根据文本的长度来做一些逻辑操作，这个时候就需要获得要显示的文本的长宽大小，Android 可以通获得 OC自然也有方法获得
 
-Android 获得方法有三种，其中measureText\(\)方法获得的最准。如下：
+Android如下：
 
 ```java
 String text ="测试文本";
 TextView textView = (TextView) findViewById(R.id.test);
 textView.setText(text);
-
+// 调用TextView的getMeasureWidth;
 int spec = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
 textView.measure(spec, spec);
-
 // getMeasuredWidth
 int measuredWidth = textView.getMeasuredWidth();
 
+// 调用TextPaint的measureText方法  这种方法虽然当文本有英文的时候会有误差
 // new textpaint measureText
 TextPaint newPaint = new TextPaint();
 float textSize = getResources().getDisplayMetrics().scaledDensity * 15;
 newPaint.setTextSize(textSize);
 float newPaintWidth = newPaint.measureText(text);
 
-// textView getPaint measureText
+// textView getPaint measureText 这种方法最佳最准
 TextPaint textPaint = textView.getPaint();
 float textPaintWidth = textPaint.measureText(text);
 ```
