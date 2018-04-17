@@ -46,7 +46,7 @@ label1.backgroundColor = [UIColor grayColor];
 label1.backgroundColor = [UIColor grayColor];
 label1.textColor = [UIColor greenColor];
 [self.view addSubview:label1];
-    
+
 //调用sizeToFit方法
 UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake(50, 200, 200, 50)];
 label2.text =@"我是UILable练习";
@@ -60,7 +60,9 @@ label2.font =[UIFont systemFontOfSize:20.0];
 
 运行效果如下：
 
-                                 ![](/assets/sizeTofit.png)
+```
+                             ![](/assets/sizeTofit.png)
+```
 
 #### UILable文本字体大小以及自定义字体的设置
 
@@ -107,32 +109,33 @@ label3.alpha = 0.4;
 [self.view addSubview:label3];
 ```
 
-            效果：                        ![](/assets/uilabelShadow.png)
-
-
+```
+        效果：                        ![](/assets/uilabelShadow.png)
+```
 
 #### UILabel根据内容获取合适的宽高
 
 再实际开发中更多时候是需要我们根据文本的长度来做一些逻辑操作，这个时候就需要获得要显示的文本的长宽大小，Android 可以通获得 OC自然也有方法获得
 
-Android 获得方法有三种，其中measureText\(\)方法获得的最准
+Android 获得方法有三种，其中measureText\(\)方法获得的最准。如下：
 
 ```java
+String text ="测试文本";
 TextView textView = (TextView) findViewById(R.id.test);
 textView.setText(text);
- 
+
 int spec = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
 textView.measure(spec, spec);
- 
+
 // getMeasuredWidth
 int measuredWidth = textView.getMeasuredWidth();
- 
+
 // new textpaint measureText
 TextPaint newPaint = new TextPaint();
 float textSize = getResources().getDisplayMetrics().scaledDensity * 15;
 newPaint.setTextSize(textSize);
 float newPaintWidth = newPaint.measureText(text);
- 
+
 // textView getPaint measureText
 TextPaint textPaint = textView.getPaint();
 float textPaintWidth = textPaint.measureText(text);
