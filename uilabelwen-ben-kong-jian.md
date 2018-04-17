@@ -1,5 +1,7 @@
 ## UILabel控件
 
+UILabel控件相当于Android中的TextView控件，都是文本展示，算是使用频率最高的UI控件。
+
 #### UILabel的创建
 
 UILabel的创建遵循通用的UIView的创建过程，但是感觉UILabel样式配置上有一点没有Android 方便是不能设置居上 居中以及居下。既没有Android视图布局的gravity属性的设置。

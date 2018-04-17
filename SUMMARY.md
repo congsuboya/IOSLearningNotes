@@ -10,6 +10,10 @@
   * [基本类型与对象](chapter1/ji-ben-lei-xing-yu-dui-xiang.md)
 * [Foundation框架](foundationkuang-jia.md)
   * [NSString类型介绍](foundationkuang-jia/nsstringlei-xing-jie-shao.md)
+  * [NSArray数组类型](foundationkuang-jia/nsarrayshu-zu-lei-xing.md)
+  * NSDictionary字典类型
+  * 深拷贝与浅拷贝的区别
+  * 谓词的基本使用
 * [iOS的内存管理](iosde-nei-cun-guan-li.md)
   * [iOS中堆与栈的区别](iosde-nei-cun-guan-li/ioszhong-dui-yu-zhan-de-qu-bie.md)
 * [UI控件](uikong-jian.md)
