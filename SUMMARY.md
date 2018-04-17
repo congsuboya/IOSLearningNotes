@@ -12,8 +12,8 @@
   * [NSString类型介绍](foundationkuang-jia/nsstringlei-xing-jie-shao.md)
   * [NSArray数组类型](foundationkuang-jia/nsarrayshu-zu-lei-xing.md)
   * [NSDictionary字典类型](foundationkuang-jia/nsdictionaryzi-dian-lei-xing.md)
-  * 深拷贝与浅拷贝的区别
-  * 谓词的基本使用
+  * [深拷贝与浅拷贝的区别](foundationkuang-jia/shen-kao-bei-yu-qian-kao-bei-de-qu-bie.md)
+  * [谓词的基本使用](foundationkuang-jia/wei-ci-de-ji-ben-shi-yong.md)
 * [iOS的内存管理](iosde-nei-cun-guan-li.md)
   * [iOS中堆与栈的区别](iosde-nei-cun-guan-li/ioszhong-dui-yu-zhan-de-qu-bie.md)
 * [UI控件](uikong-jian.md)
