@@ -10,4 +10,6 @@
   * [基本类型与对象](chapter1/ji-ben-lei-xing-yu-dui-xiang.md)
 * [Foundation框架](foundationkuang-jia.md)
   * [NSString类型介绍](foundationkuang-jia/nsstringlei-xing-jie-shao.md)
+* UI基础控件
+  * [UILabel文本控件](uilabelwen-ben-kong-jian.md)
 
