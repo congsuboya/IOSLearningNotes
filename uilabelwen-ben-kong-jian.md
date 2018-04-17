@@ -22,23 +22,13 @@ sizeToFit//方法的使用
 
 #### sizeTOFit方法的使用
 
-#### 
-
 #### UILable文本字体大小以及自定义字体的设置
-
-
 
 #### UILabel文件内容的自适应
 
-
-
 #### UILabel边框阴影效果
 
-
-
 #### UILabel根据内容获取合适的宽高
-
-
 
 
 
