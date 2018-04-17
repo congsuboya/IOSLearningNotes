@@ -11,7 +11,7 @@
 * [Foundation框架](foundationkuang-jia.md)
   * [NSString类型介绍](foundationkuang-jia/nsstringlei-xing-jie-shao.md)
   * [NSArray数组类型](foundationkuang-jia/nsarrayshu-zu-lei-xing.md)
-  * NSDictionary字典类型
+  * [NSDictionary字典类型](foundationkuang-jia/nsdictionaryzi-dian-lei-xing.md)
   * 深拷贝与浅拷贝的区别
   * 谓词的基本使用
 * [iOS的内存管理](iosde-nei-cun-guan-li.md)
