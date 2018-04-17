@@ -12,8 +12,8 @@
   * [NSString类型介绍](foundationkuang-jia/nsstringlei-xing-jie-shao.md)
 * [iOS的内存管理](iosde-nei-cun-guan-li.md)
   * [iOS中堆与栈的区别](iosde-nei-cun-guan-li/ioszhong-dui-yu-zhan-de-qu-bie.md)
-* UI控件
-  * UIView基本View控件
+* [UI控件](uikong-jian.md)
+  * [UIView基本View控件](uiviewji-ben-view-kong-jian.md)
   * [UILabel文本控件](uilabelwen-ben-kong-jian.md)
   * [UIImageView图片控件](uiimageviewtu-pian-kong-jian.md)
 
